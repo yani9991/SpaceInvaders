@@ -23,4 +23,6 @@ function OnGUI()
 	//apply GUI Skin
 	GUI.skin = customSkin;
    
+   GUI.Label(Rect(x-90,y+40,200,60),"Score : "+ PlayerController.score);
+   
 }
