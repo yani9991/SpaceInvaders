@@ -51,24 +51,24 @@ function OnGUI()
 	GUI.Label(Rect(10,0,500,50),"Player's Name: "+PlayerPrefs.GetString("Player Name")); //built-in method of saving small amounts of data to the local machine using the PlayerPrefs class, which saves you from having to deal with explicitly reading and writing files
 	
 	//display level score
-	GUI.Label(Rect(10,60,200,50),"Level Score: "+levelScore);
+	GUI.Label(Rect(700,0,200,50),"Level Score: "+levelScore);
 	
-	//display score
-	GUI.Label(Rect(10,20,100,50),"Score: "+score);
+	//display total score
+	GUI.Label(Rect(10,50,200,50),"Total Score: "+score);
 	
 	//display health
-	GUI.Label(Rect(360,20,100,50),"Health: "+health);
+	GUI.Label(Rect(210,50,200,50),"Health: "+health);
 	
 	//display shots fired
-	GUI.Label(Rect(500,20,100,50),"Shots Fired: "+shotsFired);
+	GUI.Label(Rect(410,50,200,50),"Shots Fired: "+shotsFired);
 	
 	//display shots hit
-	GUI.Label(Rect(700,20,100,50),"Shots Hit: "+shotsHit);
+	GUI.Label(Rect(610,50,200,50),"Shots Hit: "+shotsHit);
 	
 	//display shots missed
-	GUI.Label(Rect(900,20,100,50),"Shots Missed: "+shotsMissed);
-}
+	GUI.Label(Rect(810,50,200,50),"Shots Missed: "+shotsMissed);
 
+}
 
 
 function Start () {
