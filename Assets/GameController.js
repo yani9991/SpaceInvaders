@@ -71,5 +71,9 @@ function OnGUI()
 	GUI.color = Color.green;
 	GUI.Label(Rect(450,0,350,50),"Level: "+levelsPlayed);
 
-	
+	if (gameOver)
+	{
+		Destroy (this.gameObject);
+		Application.LoadLevel(3);
+	}
 }
