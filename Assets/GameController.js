@@ -56,6 +56,11 @@ function Update () {
 		RenderSettings.skybox=mat3;
 	}
 	
+	if (levelsPlayed == 4)
+	{
+		gameOver=true;
+	
+	}
 }
 
 function OnGUI()
