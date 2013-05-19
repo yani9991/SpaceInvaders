@@ -80,6 +80,8 @@ function Update () {
 	if (Input.GetKeyDown(KeyCode.Space))
 	{
 	
+		shotsFired++;
+	
 		//set the source sound of the default audio source
 		this.GetComponent(AudioSource).clip = laserSound;
 		//when I press the space bar, play the sound
