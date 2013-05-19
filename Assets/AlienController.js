@@ -5,7 +5,7 @@ var alienlaser:Rigidbody;
 function Start () {
 	var shootdelay:float=0;
 	
-	shootdelay = Random.Range(1.0,6.0);
+	shootdelay = Random.Range(1.0,3.0);
 	
 	//      calling shootlaser function, shootdelay seconds, shoot delay between 1 and 3
 	InvokeRepeating("shootlaser",shootdelay,shootdelay);
