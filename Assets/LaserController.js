@@ -39,7 +39,6 @@ function OnTriggerEnter(other:Collider)
 			
 			PlayerControllerScript.PlaySounds();
 			
-			PlayerController.shotsMissed = PlayerController.shotsFired - PlayerController.shotsHit ;
 			
 		//destroy the alien
 			Destroy(other.gameObject);
@@ -50,4 +49,12 @@ function OnTriggerEnter(other:Collider)
 		}
 	}
 
+}
+
+//when out of screen
+function OnBecameInvisible()
+{
+	PlayerController.shotsMissed = PlayerController.shotsFired - PlayerController.shotsHit ;
+	Destroy(this.gameObject);
+	
 }
