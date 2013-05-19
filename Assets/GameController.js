@@ -37,6 +37,7 @@ function Update () {
 		rows++;
 		PlayerController.levelScore = 0;
 		Application.LoadLevel(2);
+		gameOver=false;
 	}
 
 	
